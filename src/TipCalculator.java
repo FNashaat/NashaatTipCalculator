@@ -15,12 +15,16 @@ public class TipCalculator {
         while (num != -1) {
             System.out.print("Enter a cost in dollars and cents, e.g. 12.50 )-1 to end):");
             num = scan.nextDouble();
-            int
+
         }
         System.out.print("----------------------------------------");
         System.out.println("Total bill before tip: ");
-        System.out.println("Total perentage: ");
+        System.out.println("Total percentage: ");
         System.out.println("Total tip: ");
+        System.out.println("Total bill with tip: ");
+        System.out.println("Per person cost before tip: ");
+        System.out.println("Tip per person: ");
+        System.out.println("Total cost per person: ");
 
 
 
