@@ -3,19 +3,21 @@ public class TipCalculator {
     public static void main(String[] args){
         Scanner scan = new Scanner (System.in);
         System.out.println("Welcome to the tip calculator program!");
-        System.out.println("How many people will be seated today? ");
+        System.out.print("How many people will be seated today? ");
         int people = scan.nextInt();
 
-        System.out.println("What's the tip percentage? (0-100): ");
+        System.out.print("What's the tip percentage? (0-100): ");
         int tip = scan.nextInt();
 
         System.out.print("Enter a cost in dollars and cents, e.g. 12.50 )-1 to end): ");
         double num = scan.nextDouble();
 
         while (num != -1) {
-
-
+            System.out.print("Enter a cost in dollars and cents, e.g. 12.50 )-1 to end):");
+            num = scan.nextDouble();
         }
+        System.out.print("----------------------------------------");
+
 
 
 
