@@ -39,7 +39,7 @@ public class TipCalculator{
         String day = scan.nextLine();
 
         //freestyle 2nd part
-        if (Objects.equals(day, "yes")){
+        if (Objects.equals (day, "yes") ){
             System.out.println("Awesome! All customers get a 10% discount on their total before the tax and tip! You'll see it applied on the bill.");
             priceSum = priceSum * 0.90;
         } else{
