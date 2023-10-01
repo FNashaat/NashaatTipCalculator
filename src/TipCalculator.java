@@ -29,7 +29,6 @@ public class TipCalculator{
         int index = prices.size() - 1;
         prices.remove(index);
 
-        //adding the inputs
         double priceSum = 0;
         for (int i = 0; i < prices.size(); i++){
             priceSum = priceSum + prices.get(i);
@@ -61,7 +60,7 @@ public class TipCalculator{
         //chose math.round because I didn't want to use another class that would complicate things
 
         System.out.println("------------------------");
-        System.out.println("Total bill before tip: $" + priceSum);
+        System.out.println("Total bill before tip: $" + Math.round (priceSum * 100.0) / 100.0);
         System.out.println("Total percentage: " + tip + "%");
         System.out.println("Total tip: $" + Math.round (tipTotal * 100.0) / 100.0);
         System.out.println("Total bill with tip: $" + Math.round(billTotal * 100.0) /100.0);
