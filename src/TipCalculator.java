@@ -27,7 +27,7 @@ public class TipCalculator{
 
         //index starts at 0 like python so removing 1 will make it start from 1
         int index = prices.size() - 1;
-        prices.remove(index);
+        prices. remove(index);
 
         double priceSum = 0;
         for (int i = 0; i < prices.size(); i++){
