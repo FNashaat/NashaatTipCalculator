@@ -1,29 +1,39 @@
 import java.util.Objects;
 import java.util.Scanner;
 import java.util. ArrayList;
-public class TipCalculator{
-    public static void main(String[] args){
+public class TipCalculator {
+    public static void main(String[] args) {
         double num;
-        Scanner scan = new Scanner (System.in);
+        Scanner scan = new Scanner(System.in);
 
         //inserting user's input into an array to add them
-        ArrayList <Double> prices = new ArrayList<Double>();
+        ArrayList<Double> prices = new ArrayList<Double>();
+        ArrayList<String> dishItems = new ArrayList<String>();
         System.out.println("Welcome to the tip calculator!");
         System.out.println("How many people are in your group? ");
         int people = scan.nextInt();
         System.out.println("What's the tip percentage? (0-100) ");
         int tip = scan.nextInt();
         double cost = 0;
-
+        String nameOfItem = "0";
 
 
         //while loop to repeat cost line
         while (cost != -1) {
-            System.out.println("Enter a cost in dollars and cents, e.g. 12.50 (-1 to end): ");
+            System.out.println("Enter a cost in dollars and cents, e.g. 12.50 (enter -1 for the last item and to end): ");
             cost = scan.nextDouble();
             scan.nextLine();
             prices.add(cost);
+
+            System.out.println("Enter the item: ");
+            nameOfItem = scan.nextLine();
+            dishItems.add(nameOfItem);
+            if (cost == -1) {
+                break;
+            }
         }
+
+
 
         //index starts at 0 like python so removing 1 will make it start from 1
         int index = prices.size() - 1;
@@ -67,6 +77,9 @@ public class TipCalculator{
         System.out.println("Per person cost before tip: $" + Math.round(costPerPerson * 100.0) /100.0);
         System.out.println("Tip per person: $" + Math.round(tipPerPerson * 100.0) / 100.0);
         System.out.println("Total cost per person: $" + Math.round(totalPerPerson * 100.0) / 100.0);
+        System.out.println("--------------------------");
+        System.out.println("Items ordered: ");
+        System.out.println(dishItems);
 
 
 
