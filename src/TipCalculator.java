@@ -24,7 +24,7 @@ public class TipCalculator {
             cost = scan.nextDouble();
             scan.nextLine();
             prices.add(cost);
-
+//extra credit feature, adding names of dishes
             System.out.println("Enter the item: ");
             nameOfItem = scan.nextLine();
             dishItems.add(nameOfItem);
@@ -50,7 +50,7 @@ public class TipCalculator {
 
         //freestyle 2nd part
         if (Objects.equals (day, "yes") ){
-            System.out.println("Awesome! All customers get a 10% discount on their total before the tax and tip! You'll see it applied on the bill.");
+            System.out.println("Awesome! All customers get a 10% discount on their total before tip! You'll see it applied on the bill.");
             priceSum = priceSum * 0.90;
         } else{
             System.out.println("Aww, for future reference, we give a discount on Mondays. Maybe next time!");
@@ -77,12 +77,10 @@ public class TipCalculator {
         System.out.println("Per person cost before tip: $" + Math.round(costPerPerson * 100.0) /100.0);
         System.out.println("Tip per person: $" + Math.round(tipPerPerson * 100.0) / 100.0);
         System.out.println("Total cost per person: $" + Math.round(totalPerPerson * 100.0) / 100.0);
+     //extra credit feature
         System.out.println("--------------------------");
         System.out.println("Items ordered: ");
         System.out.println(dishItems);
-
-
-
 
 
     }
