@@ -20,7 +20,7 @@ public class TipCalculator {
 
         //while loop to repeat cost line
         while (cost != -1) {
-            System.out.println("Enter a cost in dollars and cents, e.g. 12.50 (enter -1 for the last item and to end): ");
+            System.out.println("Enter a cost in dollars and cents, e.g. 12.50 (enter -1 for the last item and to end): " );
             cost = scan.nextDouble();
             scan.nextLine();
             prices.add(cost);
